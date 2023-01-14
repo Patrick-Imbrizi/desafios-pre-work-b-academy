@@ -1,5 +1,10 @@
-function calculadora (callback) {
-}
+//const calculadora = function (event) {
+//    return function (a, b) {
+//        return event(a, b)
+//    }
+//}
+
+const calculadora = (event) => (a, b) => event(a, b)
 
 const sum = calculadora((a, b) => a + b)
 const sub = calculadora((a, b) => a - b)
